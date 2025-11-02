@@ -9,10 +9,8 @@ from langchain_openai import ChatOpenAI
 load_dotenv()
 
 app = FastAPI()
-SERPER_API_KEY="549f4973f633c4bec0a51879cf6dd1f45f095a2f"
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+SERPER_API_KEY=os.getenv("SERPER_API_KEY")
 
-FIRECRAWL_API_KEY = os.getenv("FIRECRAWL_API_KEY")
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
 DEEPSEEK_MODEL_NAME = os.getenv("DEEPSEEK_MODEL_NAME", "deepseek/deepseek-chat-v3.1:free")
 MODEL_BASE_URL = os.getenv("MODEL_BASE_URL", "https://openrouter.ai/api/v1")
